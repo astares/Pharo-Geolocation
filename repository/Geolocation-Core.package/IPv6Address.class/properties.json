@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "TorstenBergmann 5/27/2017 00:05",
+	"super" : "IPAddress",
+	"category" : "Geolocation-Core-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "IPv6Address",
+	"type" : "normal"
+}
