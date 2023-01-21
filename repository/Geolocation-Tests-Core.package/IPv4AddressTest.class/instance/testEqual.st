@@ -1,4 +1,4 @@
 tests
 testEqual
 
-	self assert: IPv4Address localhost  = IPv4Address localhost 
+	self assert: IPv4Address localhost equals: IPv4Address localhost 

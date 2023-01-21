@@ -1,2 +1,2 @@
 SystemOrganization addCategory: #'Geolocation-Tests-Core'!
-SystemOrganization addCategory: 'Geolocation-Tests-Core-Model'!
+SystemOrganization addCategory: #'Geolocation-Tests-Core-Model'!

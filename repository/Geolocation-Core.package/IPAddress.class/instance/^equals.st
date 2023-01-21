@@ -1,4 +1,4 @@
-comparision
+comparing
 = anotherIPAddress
 
 	^(self species = anotherIPAddress species)

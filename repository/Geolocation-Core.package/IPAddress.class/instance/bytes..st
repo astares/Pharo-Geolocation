@@ -1,3 +1,4 @@
 private - accessing
-bytes: aCollection 
+bytes: aCollection
+
 	bytes := aCollection
