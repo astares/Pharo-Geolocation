@@ -1,2 +1,3 @@
-# Pharo-Network
+# Pharo-Geolocation
+
 Network utilities
