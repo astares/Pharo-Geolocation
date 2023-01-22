@@ -4,7 +4,7 @@ IPv4 internet address
 Class {
 	#name : #IPv4Address,
 	#superclass : #IPAddress,
-	#category : 'Geolocation-Core-Model'
+	#category : #'Geolocation-Core-Model'
 }
 
 { #category : #accessing }
@@ -28,7 +28,7 @@ IPv4Address class >> examplePharo [
 { #category : #'instance creation' }
 IPv4Address class >> forName: aString [
 
-	^(self new) 
+	^(self new)
 		bytes: (NetNameResolver addressForName: aString timeout: 30);
 		yourself
 ]
@@ -36,9 +36,9 @@ IPv4Address class >> forName: aString [
 { #category : #'instance creation' }
 IPv4Address class >> fromString: aString [
 	|c bytes |
-	c := aString substrings: #($.).
+	c := aString substrings: '.'.
 	bytes := ByteArray withAll: (c collect: [:each | each asNumber ]).
-	^self new 
+	^self new
 		bytes: bytes
 ]
 
@@ -64,5 +64,5 @@ IPv4Address >> printOn: aStream [
 
 	bytes
 		do: [ :each | each printOn: aStream ]
-		separatedBy: [ aStream nextPut: $. ].
+		separatedBy: [ aStream nextPut: $. ]
 ]

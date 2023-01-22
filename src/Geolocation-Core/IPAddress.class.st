@@ -7,12 +7,12 @@ Class {
 	#instVars : [
 		'bytes'
 	],
-	#category : 'Geolocation-Core-Model'
+	#category : #'Geolocation-Core-Model'
 }
 
 { #category : #testing }
 IPAddress class >> isAbstract [
-		
+
 	^ self == IPAddress
 ]
 

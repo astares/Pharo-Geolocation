@@ -10,21 +10,17 @@ Class {
 }
 
 { #category : #baselines }
-BaselineOfGeolocation >> baseline: spec [
+BaselineOfGeolocation >> baseline: arg1 [
 
 	<baseline>
-	spec
-		for: #common do: [
-			"Packages"
-			spec
-				package: 'Geolocation-Core';
-				package: 'Geolocation-Core-Tests' with: [ spec requires: #('Geolocation-Core') ].
-
-			"Groups"
-			spec
-				group: 'Core' with: #('Geolocation-Core');
-				group: 'Tests' with: #('Geolocation-Core-Tests');
-				group: 'CI' with: #('Tests');
-				group: 'all' with: #('Core' 'Tests');
-				group: 'default' with: #('all') ]
+	arg1 for: #common do: [
+		arg1
+			package: 'Geolocation-Core';
+			package: 'Geolocation-Core-Tests'
+			with: [ arg1 requires: #( 'Geolocation-Core' ) ];
+			group: 'Core' with: #( 'Geolocation-Core' );
+			group: 'Tests' with: #( 'Geolocation-Core-Tests' );
+			group: 'CI' with: #( 'Tests' );
+			group: 'all' with: #( 'Core' 'Tests' );
+			group: 'default' with: #( 'all' ) ]
 ]
