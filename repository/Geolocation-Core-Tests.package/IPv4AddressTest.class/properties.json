@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "TorstenBergmann 5/26/2017 23:55",
 	"super" : "TestCase",
-	"category" : "Geolocation-Tests-Core-Model",
+	"category" : "Geolocation-Core-Tests-Model",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
